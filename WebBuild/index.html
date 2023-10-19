@@ -139,9 +139,9 @@
         const buildUrl = "Build";
         const loaderUrl = buildUrl + "/WebBuild.loader.js";
         const config = {
-            dataUrl: buildUrl + "/WebBuild.data.br",
-            frameworkUrl: buildUrl + "/WebBuild.framework.js.br",
-            codeUrl: buildUrl + "/WebBuild.wasm.br",
+            dataUrl: buildUrl + "/914c28678e6787c9acc65362533cfb2f.data.br",
+            frameworkUrl: buildUrl + "/13806673db247dc16d1d1882dedea831.js.br",
+            codeUrl: buildUrl + "/7da52cd8d738e1cf1e3c4a84d50c8eec.wasm.br",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "Zappar-Demo",
@@ -150,8 +150,8 @@
             cacheControl: function (url) {
             // typically includes: .data, .bundle, .zpt
             if (url.match(/\.data/) || url.match(/\.bundle/) || url.match(/\.zpt/)) {
-             return "must-revalidate";
-            }
+             return "immutable";
+}
    
             if (url.match(/\.mp4/) || url.match(/\.custom/) || url.match(/\.zbin/)) {
                 return "immutable";
